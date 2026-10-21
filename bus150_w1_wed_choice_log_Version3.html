@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Module Robotics Choice Log</title>
+<style>
+  :root{--fg:#1d2330;--mut:#5b6475;--acc:#0e6e6e;--line:#9aa3ad;--soft:#eef3f2}
+  @page{size:letter landscape;margin:0.4in}
+  *{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff;color:var(--fg);font:13px/1.35 system-ui,"Segoe UI",Arial,sans-serif;margin:0 auto;max-width:1100px;padding:16px}
+  h1{font-size:20px;margin:0;color:var(--acc)}
+  .sub{color:var(--mut);font-size:12px;margin:2px 0 10px}
+  .head{display:grid;grid-template-columns:2fr 1.3fr;gap:10px 24px;margin-bottom:10px}
+  .field{border-bottom:1.5px solid var(--fg);height:26px;display:flex;align-items:flex-end;padding-bottom:2px}
+  .field b{white-space:nowrap;margin-right:8px}
+  .path span{border:1.5px solid var(--fg);border-radius:4px;padding:1px 8px;margin-left:6px;font-size:12px}
+  .how{background:var(--soft);border-left:5px solid var(--acc);padding:7px 12px;margin-bottom:10px;font-size:12px}
+  .how ul{margin:3px 0 0;padding-left:18px}
+  table{border-collapse:collapse;width:100%;table-layout:fixed}
+  th{background:var(--acc);color:#fff;font-size:12px;text-align:left;padding:5px 6px;border:1px solid var(--acc)}
+  td{border:1px solid var(--line);vertical-align:top;padding:5px 6px}
+  td.n{width:4%;text-align:center;font-weight:700;font-size:16px;color:var(--acc)}
+  td.q{width:24%;font-weight:600}
+  td.q i{display:block;font-weight:400;font-size:11px;color:var(--mut);margin-top:3px}
+  tr.row td{height:1.25in}
+  .page2 tr.row td{height:1.0in}
+  .page2{margin-top:18px}
+  .box{border:1.5px solid var(--fg);border-radius:6px;padding:7px 14px;margin-top:8px}
+  .box h2{font-size:15px;margin:0 0 8px;color:var(--acc)}
+  .line{border-bottom:1px solid var(--line);height:24px;margin-top:2px}
+  .opts span{border:1.5px solid var(--fg);border-radius:4px;padding:1px 10px;margin-right:8px}
+  .q2{margin-top:6px;font-weight:600}
+  @media screen and (max-width:700px){.head{grid-template-columns:1fr}table{font-size:11px}}
+  @media print{body{padding:0;max-width:none}.page2{break-before:page;margin-top:0}tr{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<h1>Module Robotics — Choice Log</h1>
+<div class="sub">BUS 150 · Globalization &amp; Innovation</div>
+
+<div class="head">
+  <div class="field"><b>Team members:</b></div>
+  <div class="field path"><b>Our path (circle):</b><span>A — Mexico</span><span>B — South Florida</span></div>
+</div>
+
+<div class="how"><b>How to use this sheet</b>
+  <ul>
+    <li>At each stop, pick <b>one</b> option and fill in the row. <b>What it buys</b> = what we gain. <b>What it gives up</b> = what it costs us or the risk we take on.</li>
+    <li><b>Switch signal</b> = the event that would make us change our mind. Be specific: <i>"If tariffs on Mexican modules rise above 10%,"</i> not <i>"if things get bad."</i></li>
+    <li>There is no single right answer. You are graded on how well you explain your trade-offs.</li>
+  </ul>
+</div>
+
+<table>
+  <thead><tr><th style="width:4%">Stop</th><th style="width:24%">The decision</th><th>Our choice</th><th>What it buys</th><th>What it gives up</th><th>Switch signal</th></tr></thead>
+  <tbody>
+    <tr class="row"><td class="n">1</td><td class="q">Where should Module Robotics build its modules?<i>Mexico · South Florida · both</i></td><td>Mexico</td><td>Lower labor cost, lower unit cost, access to a mature nearshore supply chain</td><td>Border delay risk, tariff exposure, less direct control over production</td><td>If tariffs on Mexican modules rise above 10% or if USMCA rules become less predictable</td></tr>
+
+    <tr class="row"><td class="n">2</td><td class="q">How does a five-person company legally start producing?<i>Shelter provider · own Mexican company · contract manufacturer · own Florida shop + MEP</i></td><td>Shelter provider</td><td>Fast entry, legal setup already exists, easier to launch with limited cash</td><td>Ongoing service fee, less control, the company relies on a third-party legal structure</td><td>If the shelter provider cannot deliver compliance, quality, or customs performance</td></tr>
+
+    <tr class="row"><td class="n">3</td><td class="q">What crosses the border, and in what form?<i>Global parts · North American parts · finished robots · modules</i></td><td>Modules with North American parts</td><td>Lower tariff risk under USMCA, keeps the modular business model, better qualifies as real North American production</td><td>Higher supplier costs and more management across the supply chain</td><td>If North American parts cost rises more than 20% or if product classification becomes unclear</td></tr>
+
+    <tr class="row"><td class="n">4</td><td class="q">Who, or what, builds the modules?<i>People in Mexico · automated cell in Florida · rented robots · mix</i></td><td>Mix</td><td>Uses cheap labor where it matters, automates repetitive steps, keeps flexibility</td><td>More complexity, need for training, must manage both people and machines</td><td>If Mexican labor costs rise sharply or automation becomes cheaper than manual assembly</td></tr>
+  </tbody>
+</table>
+
+<div class="page2">
+<table>
+  <thead><tr><th style="width:4%">Stop</th><th style="width:24%">The decision</th><th>Our choice</th><th>What it buys</th><th>What it gives up</th><th>Switch signal</th></tr></thead>
+  <tbody>
+    <tr class="row"><td class="n">5</td><td class="q">How do the modules reach the customer?<i>Rail · truck · short haul from Florida · regional warehouse</i></td><td>Cross-border truck</td><td>Fast, flexible shipping for small-volume startup orders; easier to serve U.S. customers quickly</td><td>More expensive than rail, border delays still possible</td><td>If border dwell time exceeds 2–3 days or freight delays hurt a school or customer deadline</td></tr>
+
+    <tr class="row"><td class="n">6</td><td class="q">What exactly do we sell, and to whom first?<i>Global distributors · direct to US customers · modules-as-a-service</i></td><td>Direct to US customers</td><td>Higher margin, direct customer feedback, easier to learn what first buyers want</td><td>Slower growth than distributors and less market reach at the start</td><td>If our direct sales model does not produce repeat orders within 6 months</td></tr>
+
+    <tr class="row"><td class="n">7</td><td class="q">How hard do we commit, and how would we back out?<i>Commit fully · stage it · run both · wait and watch</i></td><td>Stage it</td><td>We keep the cost advantage but reduce the downside if trade policy changes; easier to adapt</td><td>We pay a little more than a full commitment and have less long-term operating efficiency</td><td>If tariffs or trade rules cut our profit margin by 15% or more</td></tr>
+
+    <tr class="row"><td class="n">8</td><td class="q">Who do we serve first?<i>School teams · makers · university labs · small manufacturers</i></td><td>School teams</td><td>Clear market, repeat buyers, strong community buzz, growth through competition season</td><td>Smaller budgets and lower profit per order than manufacturing customers</td><td>If schools cannot afford our product at the required price or if competition season weakens</td></tr>
+  </tbody>
+</table>
+
+<div class="box">
+  <h2>Shock round (stop 7)</h2>
+  <div class="field"><b>Shock card drawn:</b></div>
+  <p class="opts" style="margin:10px 0 0"><b>Did our switch signal fire?</b>&nbsp; <span>No</span><span>Yes</span>
+  &nbsp;&nbsp;&nbsp;<b>We decided to:</b>&nbsp; <span>Stay</span><span>Switch paths</span><span>Hedge (run both)</span></p>
+  <div class="q2">What does that cost us?</div><div class="line">We keep a bit more overhead and less long-term efficiency because we are not fully committed to one path yet, but we avoid a major sunk-cost mistake if policy changes.</div>
+</div>
+
+<div class="box">
+  <h2>Looking back</h2>
+  <div class="q2" style="margin-top:0">Did we switch paths at any stop? Which one, and why?</div><div class="line">We did not switch paths at the main decision points; we stayed with Mexico because the cost advantage and nearshore supply chain were too strong for a small startup. We only staged the commitment instead of fully locking in.</div>
+  <div class="q2">After choosing our first customer (stop 8), which earlier choice would we change?</div><div class="line">We would likely shift from a pure Mexico-first plan to a staged Mexico + South Florida hedge so we can protect the business from tariffs, border delays, or policy shocks while still staying cost competitive.</div>
+</div>
+</div>
+
+</body>
+</html>
